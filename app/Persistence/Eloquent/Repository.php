@@ -71,7 +71,7 @@ abstract class Repository implements IRepository
         }
 
         if (isset($offset)) {
-            $query->offset($limit);
+            $query->offset($offset);
         }
 
         return $query->get();
